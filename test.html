@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.cl::after,
+	.cl::before{
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+		visibility: hidden;
+	}
+	.left{
+		float: left;
+		width: 210px;
+		height: 300px;
+		background-color: #ccc;
+	}
+	.right{
+		margin-left: 220px;
+	}
+	
+	.in{border: 1px solid #000}
+	.in>div{
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		border: 1px solid #000;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="out">
+		<div class="left">
+		
+		</div>
+		<div class="right">
+			<div class="in cl">
+				<div class="l1">1</div>
+				<div class="l2">2</div>
+				<div class="l3">3</div>
+				<div class="l4">4</div>
+				<div class="l5">5</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

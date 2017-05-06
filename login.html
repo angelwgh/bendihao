@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="adminApp">
 <head>
 	<meta charset="UTF-8">
 	<title>2017世界旅游小姐大赛浙江赛区后台管理</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="content">
+	<div ng-controller="loginCtr" class="content">
 		<div class="m-login">
 			<h2>用户登录</h2>
 			<form >
@@ -16,7 +16,7 @@
 						<label for="username">用户名:</label>
 					</td>
 					<td class="t-l">
-						<input type="text" id="username" placeholder="输入用户名">
+						<input type="text" id="username" placeholder="输入用户名" ng-model="username">
 					</td>
 				</tr>
 				<tr>
@@ -24,12 +24,12 @@
 						<label for="password">密&nbsp&nbsp码:</label>
 					</td>
 					<td class="t-l"> 
-						<input type="password" id="password" placeholder="输入密码">
+						<input type="password" id="password" placeholder="输入密码" ng-model="passwor">
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-						<button>登录</button>
+						<button ng-click="submit($event)">登录</button>
 					</td>
 				</tr>
 			</table>
@@ -39,11 +39,8 @@
 	</div>
 	
 </body>
-<script>
-	var btn = document.getElementsByTagName('button')[0]
-	btn.addEventListener('click',function(e) {
-		e.preventDefault();
-		console.log(e)
-	})
-</script>
+<script type="text/javascript" src="script/jquery.min.js"></script>
+<script type="text/javascript" src="script/angular.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+
 </html>

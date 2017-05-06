@@ -6,29 +6,34 @@
 			<button>查找</button>
 		</form>
 	</div>
-	<table>
-	<thead>
-		<tr>
-			<th>编号</th>
-			<th class="header">姓名</th>
-			<th>年龄</th>
-			<th>籍贯</th>
-			<th>所在赛区</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td width="20"><input type="checkbox">001</td>
-			<td><img src="#">姓名</td>
-			<td>20</td>
-			<td>义乌</td>
-			<td>义乌</td>
-		</tr>
-
-		
-	</tbody>
-		
-	</table>
+	<div class="title">
+		<div class="select">
+			勾选
+		</div>
+		<div class="id">编号</div>
+		<div class="head-img">
+			
+		</div>
+		<div class="name">姓名</div>
+		<div class="age">18</div>
+		<div class="jiguan">籍贯</div>
+		<div class="saiqu">所在赛区</div>
+	</div>
+	<ul class="members-list">
+		<li class="member" ng-repeat="member in showList" ng-class="{'odd':isOdd($index)}">
+			<div class="select">
+				<input type="checkbox">
+			</div>
+			<div class="id" ng-bind="member.id">9999</div>
+			<div class="head-img">
+				<img ng-src="{{member.head_img}}">
+			</div>
+			<div class="name" ng-bind="member.cn_name">姓名</div>
+			<div class="age" ng-bind="member.age">18</div>
+			<div class="jiguan" ng-bind="member.jiguan">籍贯</div>
+			<div class="saiqu" ng-bind="member.saiqu">所在赛区</div>
+		</li>
+	</ul>
 
 	<div class="page-nav">
 		<ul class="pagination">
@@ -37,11 +42,11 @@
 		        <span aria-hidden="true">&laquo;</span>
 		      </a>
 		    </li>
-		    <li><a href="#">1</a></li>
-		    <li><a href="#">2</a></li>
-		    <li><a href="#">3</a></li>
-		    <li><a href="#">4</a></li>
-		    <li><a href="#">5</a></li>
+		    <li><a href="#" ng-click="selectPage($event,1)">1</a></li>
+		    <li><a href="#" ng-click="selectPage($event,2)">2</a></li>
+		    <li><a href="#" ng-click="selectPage($event,3)">3</a></li>
+		    <li><a href="#" ng-click="selectPage($event,4)">4</a></li>
+		    <li><a href="#" ng-click="selectPage($event,5)">5</a></li>
 		    <li>
 		      <a href="#" aria-label="Next">
 		        <span aria-hidden="true">&raquo;</span>

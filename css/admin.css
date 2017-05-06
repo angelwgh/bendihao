@@ -4,6 +4,7 @@
 html,body,div,h1,h2,h3,h4,h5,ul,ol{margin: 0;padding: 0;}
 body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-serif;}
 
+
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -40,6 +41,14 @@ body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-se
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 	float: left;
 	width: 100%;
+}
+
+.g-body{
+	position: fixed;
+	top:60px;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .m-nav{
@@ -100,7 +109,7 @@ body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-se
 	border-top: 1px solid #5daced;
 }
 
-.m-nav ul li span{
+.m-nav ul li a{
 	cursor: pointer;
 	color: #fff;
 	display: block;
@@ -113,7 +122,7 @@ body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-se
 	position:relative;
 }
 
-.m-nav ul li span i{
+.m-nav ul li a i{
 	color: white;
     font-size: 30px;
     display: inline-block;
@@ -125,6 +134,8 @@ body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-se
 
 .m-section{
 	margin-left: 210px;
+	max-height: 100%;
+	overflow: auto;
 }
 
 
@@ -149,11 +160,15 @@ body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-se
 .group .search input:focus{
 	outline: none;
 }
-.group table{
+
+.group .members-list{
 	width: 100%;
+	list-style: none;
 }
 
-.group table thead tr{
+.group .title{
+	height: 50px;
+	font-weight: 700;
 	background: #ededee !important;
 	background: -moz-linear-gradient(top, #ededee 0%, #dddddd 100%) !important;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededee), color-stop(100%,#dddddd)) !important; 
@@ -164,24 +179,26 @@ body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-se
 	border-bottom: 1px solid #fff;
 }
 
-.group table thead tr th{
-	font-weight: bold;
-    min-width: 100px;
-    padding: 15px 15px 15px 15px;
-    text-align: left;
-}
-.group table thead tr th.header{
-	padding-left: 70px;
+.group .title>div,
+.group .member>div{
+	float: left;
+	height: 100%;
+	line-height: 50px;
+	padding-left: 10px;
+	text-align: center;
 }
 
-.group table tbody tr{
+.group .members-list .member{
+	min-width: 925px;
+	height: 70px;
 	border: 1px solid #e9e9e9;
 	background-color: #fff;
 }
-.group table tbody .odd{
-	background: #f0f0f0;
+.group .members-list .member.odd{
+	background: #eee;
 }
-.group table tbody tr:hover{
+
+.group .members-list .member:hover{
 	background: #208ed3;
     background: -moz-linear-gradient(top, #208ed3 0%, #0272bd 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#208ed3), color-stop(100%,#0272bd));
@@ -192,11 +209,38 @@ body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-se
     color: #fff;
     cursor: pointer;
 }
-.group table td{
 
-	padding: 15px;
+
+.group .member>div{
+
+	float: left;
+	line-height: 70px;
 }
-.group table td img{
-	width: 40px;
-	height: 40px;
+
+.group .select,
+.group .id{
+	width: 50px;
+	text-align: center;
+}
+
+.group .head-img{
+	margin-left: 10px;
+	width: 60px;
+}
+.group .head-img img{
+	width: 50px;
+	height: 50px;
+}
+
+.group .name,
+.group .age,
+.group .jiguan{
+
+	width: 150px;
+}
+.group .member .name{
+	text-align: left;
+}
+.group .saiqu{
+	width: 300px;
 }
