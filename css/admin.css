@@ -1,0 +1,202 @@
+@import url("font.css");
+
+
+html,body,div,h1,h2,h3,h4,h5,ul,ol{margin: 0;padding: 0;}
+body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-serif;}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.m-top-bar{
+	background: #208ed3; /* Old browsers */
+	background: -moz-linear-gradient(top, #208ed3 0%, #0272bd 100%); /* FF3.6+ */
+	background: -	webkit-gradient(linear, left top, left bottom, color-stop(0%,#208ed3), color-stop(100%,#0272bd)); /* Chrome,Safari4+ */ 
+	background: -webkit-linear-gradient(top, #208ed3 0%,#0272bd 100%); /* Chrome10+,Safari5.1+ */ 
+	background: -o-linear-gradient(top, #208ed3 0%,#0272bd 100%); /* Opera 11.10+ */ 
+	background: -ms-linear-gradient(top, #208ed3 0%,#0272bd 100%); /* IE10+ */ 
+	background: linear-gradient(to bottom, #208ed3 0%,#0272bd 100%); /* W3C */ 
+	padding: 15px 25px;
+	overflow: hidden;
+	border-bottom: 1px solid #5daced;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 1000;
+}
+
+.m-top-bar h1{
+	color: #fff;
+	font-size: 22px;
+	letter-spacing: -1px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+	float: left;
+	width: 100%;
+}
+
+.m-nav{
+	
+	min-height: 100%;
+	width: 210px;
+	background: #3B3E40;
+	float: left;
+	position: relative;
+	z-index: 500;
+	
+	box-shadow: inset -20px 0 10px -20px #000;
+	-moz-box-shadow: inset -20px 0 10px -20px #000;
+	-webkit-box-shadow: inset -20px 0 10px -20px #000;
+}
+
+.m-nav ul li ,
+.m-nav .header-img
+{
+	background: #3B3E40;
+	border-bottom: 1px solid #27292a;
+	border-top: 1px solid #46494b;
+	
+	box-shadow: inset -20px 0 10px -20px #000;
+	-moz-box-shadow: inset -20px 0 10px -20px #000;
+	-webkit-box-shadow: inset -20px 0 10px -20px #000;	
+}
+
+.m-nav .header-img {
+	border-top: none;
+	overflow: hidden;
+}
+
+	.header-img .img{
+		margin: 30px auto;
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		border: 2px solid #FFF;
+		overflow: hidden;
+		background-color: #fff;
+	}
+
+	.header-img .img img{
+		width: 100%;
+		height: 100%;
+	}
+
+.m-nav ul li:hover, .m-nav ul li.active{
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+	background: #208ed3; /* Old browsers */ 
+	background: -moz-linear-gradient(top, #208ed3 0%, #0272bd 100%); /* FF3.6+ */ 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#208ed3), color-stop(100%,#0272bd)); /* Chrome,Safari4+ */ 
+	background: -webkit-linear-gradient(top, #208ed3 0%,#0272bd 100%); /* Chrome10+,Safari5.1+ */ 
+	background: -o-linear-gradient(top, #208ed3 0%,#0272bd 100%); /* Opera 11.10+ */ 
+	background: -ms-linear-gradient(top, #208ed3 0%,#0272bd 100%); /* IE10+ */ 
+	background: linear-gradient(to bottom, #208ed3 0%,#0272bd 100%); /* W3C */ 
+	border-top: 1px solid #5daced;
+}
+
+.m-nav ul li span{
+	cursor: pointer;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 20px 15px 20px 5px;
+	width: 190px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+	-moz-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+	position:relative;
+}
+
+.m-nav ul li span i{
+	color: white;
+    font-size: 30px;
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.m-section{
+	margin-left: 210px;
+}
+
+
+/* 参赛成员 */
+
+.group{
+	padding-top: 20px;
+}
+
+.group .search button{
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px #aaa;
+	color: #fff;
+	font-size: 20px;
+	background-color: #1886c7;
+}
+.group .search button:focus{
+	outline: none;
+	background-color: #126596;
+}
+.group .search input:focus{
+	outline: none;
+}
+.group table{
+	width: 100%;
+}
+
+.group table thead tr{
+	background: #ededee !important;
+	background: -moz-linear-gradient(top, #ededee 0%, #dddddd 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededee), color-stop(100%,#dddddd)) !important; 
+	background: -webkit-linear-gradient(top, #ededee 0%,#dddddd 100%) !important;
+	background: -o-linear-gradient(top, #ededee 0%,#dddddd 100%) !important; 
+	background: -ms-linear-gradient(top, #ededee 0%,#dddddd 100%) !important;
+	background: linear-gradient(to bottom, #ededee 0%,#dddddd 100%) !important;
+	border-bottom: 1px solid #fff;
+}
+
+.group table thead tr th{
+	font-weight: bold;
+    min-width: 100px;
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+}
+.group table thead tr th.header{
+	padding-left: 70px;
+}
+
+.group table tbody tr{
+	border: 1px solid #e9e9e9;
+	background-color: #fff;
+}
+.group table tbody .odd{
+	background: #f0f0f0;
+}
+.group table tbody tr:hover{
+	background: #208ed3;
+    background: -moz-linear-gradient(top, #208ed3 0%, #0272bd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#208ed3), color-stop(100%,#0272bd));
+    background: -webkit-linear-gradient(top, #208ed3 0%,#0272bd 100%);
+    background: -o-linear-gradient(top, #208ed3 0%,#0272bd 100%);
+    background: -ms-linear-gradient(top, #208ed3 0%,#0272bd 100%);
+    background: linear-gradient(to bottom, #208ed3 0%,#0272bd 100%);
+    color: #fff;
+    cursor: pointer;
+}
+.group table td{
+
+	padding: 15px;
+}
+.group table td img{
+	width: 40px;
+	height: 40px;
+}

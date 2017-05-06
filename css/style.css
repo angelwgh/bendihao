@@ -1,0 +1,69 @@
+html,body{width: 100%;height: 100%;}
+html,body{margin: 0;padding: 0;}
+body{font-family: 'Hiragino Sans GB',"Microsoft YaHei","黑体","宋体",sans-serif;}
+
+
+.t-r{
+	text-align: right;
+}
+.t-l{text-align: left;}
+
+.content{
+	width: 100%;
+	height: 100%;
+	background: url('../img/index_background.jpg') center center no-repeat;
+
+}
+
+.m-login{
+	position: fixed;
+	margin-left: -261px;
+	margin-top: -172px;
+	top: 50%;
+	left: 50%;
+	width: 522px;
+	height: 344px;
+	color: #fff;
+	background-image: url('../img/login_bg.png');
+}
+
+.m-login h2{
+	text-align: center;
+	font-size: 50px;
+}
+
+.m-login table{
+	font-size: 20px;
+	margin: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.m-login td{
+	height: 40px;
+}
+
+.m-login input{
+	padding-left: 10px;
+	width: 75%;
+	height: 30px;
+	color: #0066cc;
+	font-size: 20px;
+	border: none;
+	border-radius: 2px;
+}
+
+.m-login input:focus{
+	outline:none;
+}
+
+.m-login button{
+	width: 180px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px #aaa;
+	color: #fff;
+	font-size: 20px;
+	background-color: #1886c7;
+}
+
